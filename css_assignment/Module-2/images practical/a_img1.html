@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: aliceblue;
+        }
+        body{
+            background-color: black;
+        }
+        .main {
+            display: flex;
+            width: 100%;
+        }
+        .sub {
+            text-align: right;
+            margin-top: 10px;
+            width: 200px;
+        }
+        sub h1 {
+            padding: 10px;
+    }
+        .sub h2{
+            padding: 10px;
+            color: red;
+        }
+        .sub h3{
+            padding: 10px;
+        }
+        
+        .grid-path{
+            width: 80%;
+            height: 600px;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            text-align: center;
+            font-size: 50px;
+            gap: 10px;
+            /* border: 2px solid red; */
+        }
+          .grid-1{
+            grid-column: 1 / span 4;
+            grid-row: 1;
+            background-image: url(beach.jpg);
+            background-size: cover;
+            background-position: center;
+          }
+          .grid-2{
+            grid-column: 5 / span 2;
+            grid-row: 1;
+            background-image: url(Screenshot\ 2024-07-04\ 020134.png);
+            background-size: cover;
+            background-position: cover;
+        }
+        .grid-3 {
+            grid-column: 1/span;
+            background: url(9.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .grid-4 {
+            grid-column: 2/span 4;
+            background: url(naturedrawing_2302bfc2_1638674559086_sc_cmprsd_40.jpg);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .grid-5 {
+            background: url(5.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .grid-6 {
+            grid-column: 1/span 3;
+            background: url(8.jpg);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .grid-7 {
+            grid-column: 4 /span 3;
+            background: url(1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .grid-8 {
+            grid-column: 1 /span 2;
+            background: url(11.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .grid-9 {
+            grid-column: 3/span 2;
+            background: url(10.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .grid-10 {
+            grid-column: 5/span 2;
+            background: url(21.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+          .logo{
+            color: aliceblue;
+            display: inline;
+        
+          }
+          .fa-brands{
+            margin-top:20px;
+            margin: 10px;
+          }
+          
+          body {
+    margin-top: -150px;
+    font-family: Arial, sans-serif;
+    clip-path: polygon(50% 25%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+header {
+    background: black;
+    color: #fff;
+    padding: 1em 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 200px;
+}
+
+nav ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 100px;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    color: #ff6347;
+}
+
+.sub-1 {
+    background: url(istockphoto-1141810286-612x612.jpg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.sub-2 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.sub-1 h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.sub-1 p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.btn {
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.btn.primary {
+    background: #ff6347;
+}
+
+.btn.secondary {
+    background: rgba(255, 255, 255, 0.3);
+}
+         
+         
+  
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="grid-path">
+    <div class="grid-1 grid"></div>
+    <div class="grid-2 grid"></div>
+    <div class="grid-3 grid"></div>
+    <div class="grid-4 grid"></div>
+    <div class="grid-5 grid"></div>
+    <div class="grid-6 grid"></div>
+    <div class="grid-7 grid"></div>
+    <div class="grid-8 grid"></div>
+    <div class="grid-9 grid"></div>
+    <div class="grid-10 grid"></div>
+    </div>
+    <div class="sub">
+        <div>
+            <h1>SHUTTER</h1>
+        </div>
+        <div>
+            <h2>HOME</h2>
+        </div>
+        <div>
+            <h3>PHOTOS</h3>
+        </div>
+        <div>
+            <h3>BIO</h3>
+        </div>
+        <div>
+            <h3>BLOG</h3>
+        </div>
+        <div>
+            <h3>CONTACT</h3>
+        </div>
+        <div class="logo"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></div>
+            <div class="logo"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></div>
+            <div class="logo"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></div>
+        </div>
+    </div>
+</body>
+</html>

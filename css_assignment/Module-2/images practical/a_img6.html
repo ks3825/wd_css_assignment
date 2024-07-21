@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        h1{
+            font-size: larger;
+            text-align: center;
+         }
+        .main{
+            height: 100vh;
+            width: 992PX;
+            display: grid;
+            margin-left: 200px;
+            color: white;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 0.4fr 1.2fr 1.0fr 0.8fr 0.8fr;
+            grid-template-areas:" HEADER MENU MENU MENU "
+                                 "HERO HERO HERO HERO"
+                                 "MAIN MAIN 0    IMAGE"
+                                 "MAIN MAIN 0    EXTRA"
+                                 "BANNER BANNER BANNER BANNER" 
+                             
+            
+        }
+        .main > div {
+            font-size: medium;
+            text-align: center;
+            border: 2px solid black;
+            color: white;
+            
+            
+        }
+       
+        .sub-1{
+            
+            background-color: black;
+            grid-area: HEADER;
+        }
+        .sub-2{
+            background-color: red;
+            grid-area: MENU;
+        }
+        .sub-3{
+            background-color: blue;
+            grid-area: HERO;
+        }
+        .sub-4{
+            background-color: navy;
+            grid-area: MAIN;
+        }
+        .sub-5{
+            background-color: aquamarine;
+            grid-area: IMAGE;
+        }
+        .sub-6{
+            background-color: forestgreen;
+            grid-area: EXTRA; 
+        }
+        .sub-7{
+            background-color: yellow;
+            grid-area: BANNER
+        }
+        @media  only screen and (max-width:600px) {
+          .main{
+            height: 100vh;
+            width: 992px;
+            display: grid;
+          }  
+        }
+       
+       
+        
+
+</style>
+</head>
+<body>
+    <h1>DESKTOP</h1>
+    <div class="main">
+        <div class="sub-1">HEADER</div>
+        <div class="sub-2">MENU</div>
+        <div class="sub-3">HERO</div>
+        <div class="sub-4">MAIN</div>
+        <div class="sub-5">IMAGE</div>
+        <div class="sub-6">EXTRA</div>
+        <div class="sub-7">BANNER</div>
+    </div>
+    
+    
+    
+    
+</body>
+</html>
